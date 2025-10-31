@@ -22,4 +22,158 @@
       padding: 40px;
       border: 1px solid rgba(0,255,170,0.3);
       border-radius: 16px;
-      ba
+      background: rgba(0,0,0,0.4);
+      box-shadow: 0 0 25px rgba(0,255,170,0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      background: linear-gradient(90deg, #00ffaa, #00e0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #00ffaa;
+      text-shadow: 0 0 8px #00ffaa;
+      margin-top: 40px;
+    }
+
+    h3 {
+      color: #00e0ff;
+      margin-top: 20px;
+    }
+
+    p, li {
+      color: #b9f2ff;
+      line-height: 1.7em;
+      font-size: 15px;
+    }
+
+    a {
+      color: #00ffaa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 22px;
+      background: linear-gradient(90deg, #00ffaa, #00e0ff);
+      color: black;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.2s ease;
+      text-shadow: none;
+    }
+
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #00ffaa;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #00ffaa, transparent);
+      margin: 40px 0;
+    }
+
+    /* --- FOOTER ANIMATION --- */
+    .matrix {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 4px;
+      z-index: 1;
+      opacity: 0.7;
+    }
+
+    .bar {
+      width: 6px;
+      background: linear-gradient(180deg, #00ffaa, #00e0ff);
+      border-radius: 3px;
+      animation: bounce 1.8s infinite ease-in-out;
+    }
+
+    @keyframes bounce {
+      0%, 100% { height: 10px; opacity: 0.3; }
+      50% { height: 60px; opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>YUGGY'S AFTER-PARTY: THE SYSTEM VAULT (CHEAT CODES)</h1>
+    <p>Welcome to the "After-Party". This is where the "PnL Monster" shares the <i>real</i> cheat codes.<br>
+    On Twitter, we <b>hunt</b>. Here, we <b>calculate</b>.</p>
+
+    <hr>
+
+    <h2>INTRO: SYSTEM > HOPE (MY PLEB-TO-MONSTER STORY)</h2>
+    <p>[❗️ <b>TASK (SPINNERETTE):</b> Spinnerette's v3.0 ("Degen Jester") write-up of your +10,272% (PnL) "Pleb to Monster" story goes here. Include visuals of your first losing PnLs and then the peak PnL as proof.]</p>
+
+    <hr>
+
+    <h2>Step 1: Understanding "The Joke" (Why You're Still Losing)</h2>
+    <p>You're not a "pleb" because of your "mindset". You're a pleb because you're <i>designed</i> to be exit liquidity.</p>
+    <ul>
+      <li><b>What is "Hopium Dealing"?</b><br>
+      (When a KOL says "just double it 8 times" or "$10M is realistic", you're not the customer. You're the product.)</li>
+      <li><b>The #FuckTheKOLs Manifesto</b><br>
+      (We don't "hope". We <b>calculate</b>.)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Step 2: Gearing Up (The PnL Monster's Arsenal)</h2>
+    <p>A "system" doesn't have to be boring — it's a <i>cheat code</i>.</p>
+
+    <h3>1. "The Printer": Dbot Settings</h3>
+    <p>This is where you stop "sweating" and start "printing". Step 1 to "stop the bleeding".<br>
+    [❗️ <b>TASK 1 (YOU):</b> Embed your "Dbot Default Settings" video here. (YouTube Unlisted link).]</p>
+
+    <h3>2. "The Hunting Radar": Axiom + The WHAD Method</h3>
+    <ul>
+      <li>(A simple breakdown of the WHAD Method (Dbot+Axiom Synergy) goes here.)</li>
+      <li>(A short intro on how we find Proven Wallets referencing the WHAD "Curated Wallets" feature.)</li>
+    </ul>
+
+    <hr>
+
+    <h2>Step 3: Join the "After-Party"</h2>
+    <p>This "System Vault" is just the beginning.<br>
+    The real jokes and real-time alpha are in the After-Party (Telegram).</p>
+
+    <a class="button" href="#" target="_blank">JOIN YUGGY'S AFTER-PARTY</a>
+    <p><i>Inside: voice notes, early signals, and system logic.</i></p>
+  </div>
+
+  <div class="matrix" id="matrix"></div>
+
+  <script>
+    const matrix = document.getElementById('matrix');
+    for (let i = 0; i < 80; i++) {
+      const bar = document.createElement('div');
+      bar.className = 'bar';
+      bar.style.animationDelay = `${Math.random() * 2}s`;
+      matrix.appendChild(bar);
+    }
+  </script>
+
+</body>
+</html>
